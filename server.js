@@ -9,6 +9,7 @@ app.use(cors());
 app.use(express.json());
 app.use(productRouter);
 
+
 const start = async () => {
     await connection();
     console.log("connected to mongoDB");
